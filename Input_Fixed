@@ -1,8 +1,6 @@
 #Fixed Bills are bills that don't have much deviation from one month to the next
 
-def f_bills():
-  global rent, med_insure, auto_insure, phone, dental_insure, gym
-  
+def default_f():
   #Default Settings
   rent = 0
   med_insure = 0
@@ -10,6 +8,9 @@ def f_bills():
   phone = 0
   dental_insure = 0
   gym = 0
+
+def f_bills():
+  global rent, med_insure, auto_insure, phone, dental_insure, gym
   
   #input of Fixed Bills
   rent = int(input("\nWhat is your Mortgage or Rent for this month?: "))
