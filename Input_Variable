@@ -1,9 +1,7 @@
 #Variable Bills are expenses that change from month to month
 
-def v_bills ():
-	global electric, car_gas, food, household, animals, chiro, variable_bills, yearly_variable_bills
-	
-  #default Settings
+def default_v():
+	#default Settings
   electric = 0
   car_gas = 0
   food = 0
@@ -11,6 +9,9 @@ def v_bills ():
   animals = 0
   chiro = 0
   trash = 0
+
+def v_bills ():
+	global electric, car_gas, food, household, animals, chiro, variable_bills, yearly_variable_bills
   
   #change default settings
   electric = int(input("\nWhat is your Electric Bill for this Month? "))
